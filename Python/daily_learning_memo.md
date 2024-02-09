@@ -1,7 +1,7 @@
 # What I am learning daily as an absolute beginner in Japan
 
 ### 9 Feb, 2024
-#### * paizaラーニング [(リンク)](https://paiza.jp/ "paiza")
+* [paizaラーニング](https://paiza.jp/ "paiza")
 　Python体験編1: Pythonをはじめよう(chapter 1 to 9)
 
  So far so good.
@@ -79,7 +79,5 @@
   puts "日給：#{number * 1000}円"  # 8 -> 日給：8000円
   ```
 
-  `int()` is like `to_i` of Ruby.
-  `str()` is like `to_s` of Ruby.
+  `int()` is like `to_i` of Ruby and `str()` is like `to_s` of that.
 
-  
