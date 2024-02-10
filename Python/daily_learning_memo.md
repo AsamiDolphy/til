@@ -4,6 +4,9 @@
 * [paizaラーニング](https://paiza.jp/ "paiza")
   - Python体験編1: Pythonをはじめよう(chapter 1 to 9)
   - スキルチェック(Ruby: 2)
+* [PERSONAL MIRAIZ](https://miraiz-persol.jp/learning)
+  - Python入門: chapter 1, 2
+
 
  So far so good.
  It looks quite similar to Ruby. I think both are pretty readable.
@@ -88,6 +91,8 @@
 * [paizaラーニング](https://paiza.jp/ "paiza")
  - Python体験編1: Pythonをはじめよう(chapter 10 to **)
   - スキルチェック(Python: 2, Ruby: 2)
+* [PERSONAL MIRAIZ](https://miraiz-persol.jp/learning)
+  - Python入門: chapter 3
 
  Because the logic and structure of the code are similar between Python and Ruby, but the syntax differs a little, I keep forgetting to add `:` and `(  )` for Python code and `end` for Ruby.
 
@@ -149,4 +154,24 @@
   else
     puts "Goodbye"
   end
+  ```
+
+  MIRAIZ: `operators`
+  ```python
+  x = 12 # assignment
+  y = 2 # assignment
+  z = x > y and y% 2 == 0
+  print(z) # <- true!
+  ```
+  I was surprized to know that in Python, I don't need to explicitly declare the data type of a variable when I create it! Instead, Python determines the data type of a variable dynamically based on the values assigned to it. 
+  This should be one reason why Python is said to be a readable and faster development language compared to many other languages, I assume.
+
+  So I can confirm the type as below:
+  ```python
+  x = 3.1492
+  print(type(x))
+  ```
+  then it prints
+  ```python
+  <class 'int'>
   ```
