@@ -2,7 +2,8 @@
 
 ## 9 Feb, 2024
 * [paizaラーニング](https://paiza.jp/ "paiza")
-　Python体験編1: Pythonをはじめよう(chapter 1 to 9)
+  - Python体験編1: Pythonをはじめよう(chapter 1 to 9)
+  - スキルチェック(Ruby: 2)
 
  So far so good.
  It looks quite similar to Ruby. I think both are pretty readable.
@@ -85,7 +86,8 @@
 
 ### 10 Feb, 2024
 * [paizaラーニング](https://paiza.jp/ "paiza")
-　Python体験編1: Pythonをはじめよう(chapter 10 to **)
+ - Python体験編1: Pythonをはじめよう(chapter 10 to **)
+  - スキルチェック(Python: 2, Ruby: 2)
 
  Because the logic and structure of the code are similar between Python and Ruby, but the syntax differs a little, I keep forgetting to add `:` and `(  )` for Python code and `end` for Ruby.
 
