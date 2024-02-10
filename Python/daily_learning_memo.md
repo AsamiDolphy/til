@@ -1,4 +1,4 @@
-# What I am learning daily as an absolute beginner in Japan
+# What/how I am learning daily as an absolute beginner in Japan
 
 ## 9 Feb, 2024
 * [paizaラーニング](https://paiza.jp/ "paiza")
