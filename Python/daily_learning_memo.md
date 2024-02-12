@@ -179,8 +179,8 @@
 
   ## 12 Feb, 2024
 * [paizaラーニング](https://paiza.jp/ "paiza")
-  - Python体験編1: Pythonをはじめよう(chapter 12 to **)
-  - スキルチェック(Python: 2, Ruby: 2)
+  - Python体験編1: Pythonをはじめよう(chapter 12)
+  - スキルチェック(Python: 9, Ruby: 1)
 * [PERSONAL MIRAIZ](https://miraiz-persol.jp/learning)
   - Python入門: chapter **
 
@@ -211,3 +211,23 @@
     puts "#{number} は200以上"
   end
   ```
+
+
+
+Something new I learnt today through the skill check drills.
+
+* To remove `substrings`, use string manipulation methods
+(not '-')
+* `gsub` method, "global substitution" is to replace all occurrences of a specified pattern within a string with another substring.
+
+    ##### Ruby
+  ```ruby
+  S = gets.chomp.to_s
+
+  if S.include?("の秋")      # 「の秋」が含まれている場合
+    puts S.gsub("の秋", "")  # 「の秋」を「」と置き換える
+  else
+    puts S
+  end
+  ```
+  
