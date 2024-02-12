@@ -25,7 +25,7 @@
   ```
 
 
- Also, variable (変数) is used similarly.
+ Also, `variable` (変数) is used similarly.
 
   ##### Python
   ```python
@@ -40,7 +40,7 @@
   ``````
 
 
-  Taking input is like..
+  Taking `input` (代入) is like..
   
   ##### Python
   ```python
@@ -89,7 +89,7 @@
 
 ### 10 Feb, 2024
 * [paizaラーニング](https://paiza.jp/ "paiza")
- - Python体験編1: Pythonをはじめよう(chapter 10 to **)
+ - Python体験編1: Pythonをはじめよう(chapter 10 to 11)
   - スキルチェック(Python: 2, Ruby: 2)
 * [PERSONAL MIRAIZ](https://miraiz-persol.jp/learning)
   - Python入門: chapter 3
@@ -174,4 +174,40 @@
   then it prints
   ```python
   <class 'int'>
+  ```
+
+
+  ## 12 Feb, 2024
+* [paizaラーニング](https://paiza.jp/ "paiza")
+  - Python体験編1: Pythonをはじめよう(chapter 12 to **)
+  - スキルチェック(Python: 2, Ruby: 2)
+* [PERSONAL MIRAIZ](https://miraiz-persol.jp/learning)
+  - Python入門: chapter **
+
+  Classify numbers.
+  It's a good to review Ruby by comparing with Python. This reminded me of the usage of string interpolation `#{}` to insert the value.
+
+    ##### Python
+  ```python
+  number = int(input())
+
+  if number < 100:
+    print(str(number) + "は100より小さい")
+  elif number < 200:
+    print(str(number) + "は100以上200より小さい")
+  else:
+    print(str(number) + "は200以上")
+  ```
+
+    ##### Ruby
+  ```ruby
+  number = gets.chomp.to_i
+
+  if number < 100
+    puts "#{number} は100より小さい"
+  elsif number < 200
+    puts "#{number} は100以上200より小さい"
+  else
+    puts "#{number} は200以上"
+  end
   ```
