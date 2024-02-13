@@ -300,7 +300,7 @@ And `range` function is like this below.
     ## 13 Feb, 2024
 * [paizaラーニング](https://paiza.jp/ "paiza")
   - Python体験編1: Pythonをはじめよう(chapter 13 to 15)
-  - スキルチェック(Python: *, Ruby: *)
+  - スキルチェック(Ruby: 1)
 * [PERSONAL MIRAIZ](https://miraiz-persol.jp/learning)
   - Python入門: chapter 4
 
@@ -464,4 +464,117 @@ Receive multiple variables and classify.
   end
   ```
 
-  And this was the last lesson of paiza learning. It was very fun and easy to understand as they explain "variable" etc. every time. I think that's very important for the beginners. 
+And this was the last lesson of paiza learning. It was very fun and easy to understand as they explain "variable" etc. every time. I think that's very important for the beginners. 
+
+In the skill check on paiza, I have learnt something new.
+
+In Ruby, to see if there are the same characters in a string:
+
+  #### Ruby
+  ```ruby
+  s = gets.chomp
+
+  if s.chars.uniq.length < s.length
+    puts "NG"                 # <- 文字数が減った = 重複があった
+  else
+    puts "OK"
+  end
+  ```
+
+## `.chars` method
+`.chars` method is used to split a string into an array of its individual characters. Here's how it works:
+
+  ```ruby
+  string = "Hello"
+  characters = string.chars
+  puts characters.inspect     # Output: ["H", "e", "l", "l", "o"]
+  ```
+The `.chars` method converts each character of the string into an element of an array, allowing to access and manipulate individual characters more easily.
+
+## `.uniq` method
+`.uniq` method is used to remove duplicate elements from an array. Here's how it works:
+
+  ```ruby
+  array = [1, 2, 2, 3, 3, 3, 4, 5]
+  unique_elements = array.uniq
+  puts unique_elements.inspect  # Output: [1, 2, 3, 4, 5]
+  ```
+
+`.uniq` method returns a new array with duplicate elements removed, preserving only the unique elements in the original array. It does not modify the original array.
+
+## `length` method
+length method (or size method, which is an alias of length) is used to determine the number of elements in various data structures. Here are a few examples:
+
+  * For strings: Returns the number of characters in the string.
+  * For arrays, hashes, and other collections: Returns the number of elements in the collection.
+
+  ```ruby
+  string_length = "Hello".length         # string_length is 5
+  array_length = [1, 2, 3, 4, 5].length  # array_length is 5
+  ```
+
+
+Then the same thing in Python:
+
+  #### Python
+  ```python
+  s = input()
+
+  if len(set(s)) < len(s):
+    print("NG")
+  else:
+    print("OK")
+```
+
+## len` function
+`len()` function returns the number of elements in a sequence or collection. Here are a few examples:
+
+  * For strings: Returns the number of characters in the string.
+  * For lists, tuples, sets, and dictionaries: Returns the number of elements in the collection.
+
+  ```python
+  string_length = len("Hello")        # string_length is 5
+  list_length = len([1, 2, 3, 4, 5])  # list_length is 5
+  ```
+
+## `set` function
+`set()` function and data type represent an unordered collection of unique elements. Here's an overview of set() in Python:
+
+Creating a Set:
+You can create a set by passing an iterable (such as a list, tuple, or string) to the set() function, or by using curly braces {} with comma-separated elements:
+
+  ```ruby
+  # Using set() function
+  my_set1 = set([1, 2, 3, 4, 5])
+
+  # Using curly braces
+  my_set2 = {1, 2, 3, 4, 5}
+  ```
+
+Properties of Sets:
+Sets are unordered collections, meaning the elements are not stored in any particular order.
+Sets contain only unique elements. If you try to add an element that already exists in the set, it will not be added again.
+Sets can only contain immutable (hashable) elements. This means you cannot have lists or other sets as elements of a set, but you can have tuples since they are immutable.
+
+Common Operations on Sets:
+* Adding elements: Use the add() method to add a single element to the set, or use the update() method to add multiple elements from another set or iterable.
+* Removing elements: Use the remove() or discard() methods to remove specific elements from the set.
+* Set operations: Sets support various set operations such as union, intersection, difference, and symmetric difference.
+Here's a basic example of using sets:
+
+  ```ruby
+  my_set = {1, 2, 3, 4, 5}
+
+  # Adding elements
+  my_set.add(6)
+  print(my_set)  # Output: {1, 2, 3, 4, 5, 6}
+
+  # Removing elements
+  my_set.remove(3)
+  print(my_set)  # Output: {1, 2, 4, 5, 6}
+
+  # Set operations
+  other_set = {4, 5, 6, 7, 8}
+  intersection = my_set.intersection(other_set)
+  print(intersection)  # Output: {4, 5, 6}
+  ```
