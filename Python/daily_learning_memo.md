@@ -256,7 +256,7 @@ range(3, 5) generates a sequence of numbers starting from 3 up to (but not inclu
     print(x * 10)
     print(x * 15)
 
-      # output
+  # output
   15    # <- 3 * 5
   30    # <- 3 * 10
   45    # <- 3 * 15
@@ -296,3 +296,172 @@ And `range` function is like this below.
   for x in 3..4          # range '3..4' includes 3 and 4!
   end
   ```
+
+    ## 13 Feb, 2024
+* [paizaラーニング](https://paiza.jp/ "paiza")
+  - Python体験編1: Pythonをはじめよう(chapter 13 to 15)
+  - スキルチェック(Python: *, Ruby: *)
+* [PERSONAL MIRAIZ](https://miraiz-persol.jp/learning)
+  - Python入門: chapter 4
+
+  I found the `loop` logic interesting to compare between Python and Ruby. 
+
+    ##### Python
+  ```python
+  greeting = "Hello world"
+  for i in range(5):        # <- "i" is a variable. "range(5)" repeats 5 times
+    print(greeting)
+
+  # output
+  Hello world
+  Hello world
+  Hello world
+  Hello world
+  Hello world
+  ```
+
+    ##### Ruby
+  ```ruby
+  greeting = "Hello world"
+  5.times do |i|
+    puts greeting
+  end
+
+  # output
+  Hello world
+  Hello world
+  Hello world
+  Hello world
+  Hello world
+  ```
+
+Variable "i" holds the current iteration index. Therefore..
+
+    ##### Python
+  ```python
+  greeting = "Hello world"
+  for i in range(5):
+    repeats 5 times
+    print(greeting + str(i))  # <- added "str(i)" to show current iteration index
+
+  # output
+  Hello world0                # <- iteration index is added after "Hello world"
+  Hello world1
+  Hello world2
+  Hello world3
+  Hello world4
+  ```
+
+    ##### Ruby
+  ```ruby
+  greeting = "Hello world"
+  5.times do |i|
+    puts greeting + i.to_s
+  end
+
+  # output
+  Hello world0
+  Hello world1
+  Hello world2
+  Hello world3
+  Hello world4
+  ```
+
+Receive a variable to loop for.
+
+    #### Python
+  ```python
+  greeting = "Hello world"
+  count = int(input())
+
+  for i in range(count):
+    print(greeting)
+  ```
+
+    ##### Ruby
+  ```ruby
+  greeting = "Hello world"
+  count = gets.chomp.to_i
+
+  count.times do |i|
+    puts greeting
+  end
+  ```
+
+    #### Python
+  ```python
+  count = int(input())
+
+  for i in range(count):
+    name = input()
+    print("Hello " + name)
+
+  # input
+  3
+  world
+  Yamada
+  python
+
+  # output
+  Hello world
+  Hello Yamada
+  Hello python
+  ```
+
+    ##### Ruby
+  ```ruby
+  count = gets.chomp.to_i
+
+  count.times do |i|
+    name = gets.chomp
+    puts "Hello " + name
+  end
+
+  # input
+  3
+  world
+  Yamada
+  python
+
+  # output
+  Hello world
+  Hello Yamada
+  Hello python
+  ```
+Receive multiple variables and classify.
+
+    #### Python
+  ```python
+  count = int(input())
+
+  for i in range(count):
+    number = int(input())
+    print(number)
+
+    if number == 10:
+        print(str(number) + "は10に等しい")
+    elif number > 10:
+        print(str(number) + "は10より大きい")
+    else:
+        print(str(number) + "は10未満")
+  ```
+
+    #### Ruby
+  ```ruby
+  count = gets.chomp.to_i
+
+  count.times do |i|
+    number = gets.chomp.to_i
+    puts number
+
+    if number == 10
+        puts "#{number}は10に等しい"
+    elsif number > 10
+        puts "#{number}は10より大きい"
+    else
+        puts "#{number}は10未満"
+    end
+  end
+  ```
+
+  And this was the last lesson of paiza learning. It was very fun and easy to understand as they explain "variable" etc. every time. I think that's very important for the beginners. 
