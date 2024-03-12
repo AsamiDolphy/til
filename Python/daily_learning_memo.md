@@ -578,3 +578,9 @@ Here's a basic example of using sets:
   intersection = my_set.intersection(other_set)
   print(intersection)  # Output: {4, 5, 6}
   ```
+
+      ## 12 Mar, 2024
+* [paizaラーニング](https://paiza.jp/ "paiza")
+  - スキルチェック(Ruby: 1)
+* [PERSONAL MIRAIZ](https://miraiz-persol.jp/learning)
+  - Python入門: chapter 4
