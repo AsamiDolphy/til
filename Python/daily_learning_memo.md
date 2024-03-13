@@ -541,9 +541,9 @@ Then the same thing in Python:
 `set()` function and data type represent an unordered collection of unique elements. Here's an overview of set() in Python:
 
 Creating a Set:
-You can create a set by passing an iterable (such as a list, tuple, or string) to the set() function, or by using curly braces {} with comma-separated elements:
+Creating a set by passing an iterable (such as a list, tuple, or string) to the set() function, or by using curly braces {} with comma-separated elements:
 
-  ```ruby
+  ```python
   # Using set() function
   my_set1 = set([1, 2, 3, 4, 5])
 
@@ -562,7 +562,7 @@ Common Operations on Sets:
 * Set operations: Sets support various set operations such as union, intersection, difference, and symmetric difference.
 Here's a basic example of using sets:
 
-  ```ruby
+  ```python
   my_set = {1, 2, 3, 4, 5}
 
   # Adding elements
